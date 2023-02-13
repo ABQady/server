@@ -6,7 +6,7 @@ const app = express();
 const PORT = 5000;
 //app.use(cors());
 app.use(cors({
-   origin: '*'
+   origin: ['*', 'https://client-abqady.vercel.app']
 }));
 app.use(cors({
    methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH']
