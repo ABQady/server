@@ -78,6 +78,7 @@ app.post('/delete', (req, res) => {
       if (err) {
          console.log(err)
       }
+      console.log(result)
    })
 })
 
