@@ -7,7 +7,7 @@ const PORT = 5000;
 //app.use(cors());
 app.use(express.json())
 
-app.use(cors({ origin: "https://client-fgnw09c8w-abqady.vercel.app/", credentials: true }));
+app.use(cors({ origin: "https://client-h4otq888n-abqady.vercel.app/", credentials: true }));
 
 // Route to get all products
 app.get("/api/get", (req, res) => {
