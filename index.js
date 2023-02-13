@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 })
 
 // Route to get all products
-app.get("/api/get", (req, res) => {
+app.get("/get", (req, res) => {
    db.query("SELECT * FROM products", (err, result) => {
       if (err) {
          console.log(err)
@@ -43,7 +43,7 @@ app.get("/api/get", (req, res) => {
 });
 
 // Route for creating a new product
-app.post('/api/create', (req, res) => {
+app.post('/create', (req, res) => {
 
    const sku = req.body.sku;
    const name = req.body.name;
@@ -62,7 +62,7 @@ app.post('/api/create', (req, res) => {
 })
 
 // Route to delete a product
-app.post('/api/delete', (req, res) => {
+app.post('/delete', (req, res) => {
    const SKU = req.body.SKU;
 
    db.query("DELETE FROM products WHERE SKU = ?", SKU, (err, result) => {
