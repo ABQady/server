@@ -1,9 +1,9 @@
 const mysql = require('mysql')
 const db = mysql.createConnection({
-   host: "localhost",
-   user: "id20294009_root",
-   password: "%Q!9kM~RcAiFiJiJ",
-   database: "id20294009_products"
+   host: "eu-central.connect.psdb.cloud",
+   user: "ozezvapjpsc2c5rfxz08",
+   password: "pscale_pw_ojEwaGldlgx7vYOeytVebLCjaYtPdFFRQxyeRXD3X6o",
+   database: "products"
 })
 
 module.exports = db;
