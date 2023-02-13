@@ -67,8 +67,8 @@ app.post('/create', (req, res) => {
          console.log(err)
       }
       console.log(result)
+      res.send(result);
    });
-   res.send(result);
 })
 
 // Route to delete a product
@@ -80,8 +80,8 @@ app.post('/delete', (req, res) => {
          console.log(err)
       }
       console.log(result)
+      res.send(result);
    })
-   res.send(result);
 })
 
 app.listen(PORT, () => {
