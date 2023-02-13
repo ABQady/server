@@ -4,38 +4,10 @@ const cors = require('cors')
 
 const app = express();
 const PORT = 5000;
-//app.use(cors());
+
 app.use(cors({
-   origin: ['*', 'https://client-abqady.vercel.app']
+   origin: ['*']
 }));
-app.use(cors({
-   methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH']
-}));
-
-app.use(express.json())
-
-//app.use(cors({ origin: "https://client-abqady.vercel.app/" }));
-
-app.use(function (req, res, next) {
-
-   // Website you wish to allow to connect
-   res.setHeader('Access-Control-Allow-Origin', '*');
-
-   // Request methods you wish to allow
-   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-
-   // Request headers you wish to allow
-   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-
-   res.setHeader('Access-Control-Allow-Credentials', true);
-
-   // Set to true if you need the website to include cookies in the requests sent
-   // to the API (e.g. in case you use sessions)
-   res.setHeader('Access-Control-Allow-Credentials', true);
-
-   // Pass to next layer of middleware
-   next();
-});
 
 app.get('/', (req, res) => {
    res.send('Hey this is my API running 🥳')
