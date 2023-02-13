@@ -7,7 +7,7 @@ const PORT = 5000;
 //app.use(cors());
 app.use(express.json())
 
-app.use(cors({ origin: "https://client-h4otq888n-abqady.vercel.app/" }));
+app.use(cors({ origin: "https://client-abqady.vercel.app/" }));
 
 app.use(function (req, res, next) {
 
