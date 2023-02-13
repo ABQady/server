@@ -9,6 +9,10 @@ app.use(express.json())
 
 app.use(cors({ origin: "https://client-h4otq888n-abqady.vercel.app/", credentials: true }));
 
+app.get('/', (req, res) => {
+   res.send('Hey this is my API running 🥳')
+})
+
 // Route to get all products
 app.get("/api/get", (req, res) => {
    db.query("SELECT * FROM products", (err, result) => {
