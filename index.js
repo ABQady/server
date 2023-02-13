@@ -29,11 +29,11 @@ app.use(function (req, res, next) {
 });
 
 app.get('/', (req, res) => {
-   res.send('Hey this is my API running 🥳')
-})
+   //    res.send('Hey this is my API running 🥳')
+   // })
 
-// Route to get all products
-app.get("/get", (req, res) => {
+   // // Route to get all products
+   // app.get("/get", (req, res) => {
    db.query("SELECT * FROM products", (err, result) => {
       if (err) {
          console.log(err)
