@@ -68,7 +68,7 @@ app.post('/create', (req, res) => {
       }
       console.log(result)
    });
-   res.send("done");
+   //res.send("done");
 })
 
 // Route to delete a product
@@ -81,7 +81,7 @@ app.post('/delete', (req, res) => {
       }
       console.log(result)
    })
-   res.send("done");
+   // res.send("done");
 })
 
 app.listen(PORT, () => {
