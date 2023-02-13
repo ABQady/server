@@ -1,8 +1,8 @@
 const mysql = require('mysql')
 const db = mysql.createConnection({
    host: "eu-central.connect.psdb.cloud",
-   user: "ozezvapjpsc2c5rfxz08",
-   password: "pscale_pw_ojEwaGldlgx7vYOeytVebLCjaYtPdFFRQxyeRXD3X6o",
+   user: "teqkyrb3l23iheinqp7a",
+   password: "pscale_pw_JLSpXzbNVZwIPgFBnTKIXFqyuELe5CtXeC3XrvXGH7G",
    database: "products"
 })
 
