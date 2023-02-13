@@ -3,9 +3,11 @@ const db = require('./config/db')
 const cors = require('cors')
 
 const app = express();
-const PORT = 3002;
-app.use(cors());
+const PORT = 5000;
+//app.use(cors());
 app.use(express.json())
+
+app.use(cors({ origin: "https://client-fgnw09c8w-abqady.vercel.app/", credentials: true }));
 
 // Route to get all products
 app.get("/api/get", (req, res) => {
