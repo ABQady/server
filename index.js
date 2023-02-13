@@ -4,10 +4,13 @@ const cors = require('cors')
 
 const app = express();
 const PORT = 5000;
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+   origin: '*'
+}));
 app.use(express.json())
 
-app.use(cors({ origin: "https://client-abqady.vercel.app/" }));
+//app.use(cors({ origin: "https://client-abqady.vercel.app/" }));
 
 app.use(function (req, res, next) {
 
